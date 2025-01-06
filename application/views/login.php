@@ -72,8 +72,8 @@
             <form action="<?php echo base_url(); ?>index.php/welcome/login" method="post">
                 <img src="<?php echo base_url(); ?>assets/login/img/image.png">
                 <h3>PEMERINTAH KABUPATEN MELAWI</h3>
-                <h2>JKN BOK 2024</h2>
-                <p>Jaminan Kesehatan Nasional dan Bantuan Operasional Kesehatan</p>
+                <h2>BOK 2025</h2>
+                <p>Bantuan Operasional Kesehatan</p>
                 <?php echo isset($pesan) ?
                     "<div class='alert'><font color='red'>" . $pesan . "</font></div>" : ""; ?>
                 <br />
@@ -100,7 +100,7 @@
                         <i class="fas fa-calendar"></i>
                     </div>
                     <div class="div">
-                        <input class="input" type="text" name="pcthang" id="pcthang" value="2024" readonly="true">
+                        <input class="input" type="text" name="pcthang" id="pcthang" value="2025" readonly="true">
 
 
                     </div>
