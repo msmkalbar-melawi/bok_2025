@@ -211,7 +211,7 @@ class PenerimaanBOKController extends CI_Controller
         $lccr = $this->input->post('q');
         $sql = "SELECT distinct a.kd_rek6 as kd_rek6,b.nm_rek6 AS nm_rek,b.map_lo as kd_rek, c.nm_rek5, a.kd_sub_kegiatan FROM 
         trdrka a left join ms_rek6 b on a.kd_rek6=b.kd_rek6 left join ms_rek5 c on left(a.kd_rek6,8)=c.kd_rek5 
-        where a.kd_skpd = '5.02.0.00.0.00.02.0000' AND a.kd_rek6 IN('420101040011','420101040013','420101040021')/*and left(a.kd_rek6,1)='4'*/ and 
+        where a.kd_skpd = '5.02.0.00.0.00.02.0000' AND a.kd_rek6 IN('420101040011','420101040013','420101040035')/*and left(a.kd_rek6,1)='4'*/ and 
         (upper(a.kd_rek6) like upper('%$lccr%') or b.nm_rek6 like '%$lccr%') order by kd_rek6";
 
 
